@@ -13,14 +13,13 @@ from kivy.properties import StringProperty, BoundedNumericProperty
 from kivy.lang import Builder
 
 
-class WidgetExample(GridLayout):
 
-    def build(self):
-        return Image('\cursoeoi\logo.png')
+
+class WidgetExample(GridLayout):
 
     button_text = StringProperty("Cifra/descifra")
     input_text = StringProperty('Iholflgdghv, qrydwr, ho ghfrglilfdgru gh VKLHOG ixqflrqd')
-    label_text = StringProperty('hola mundo')
+    label_text = StringProperty('Aquí queda descifrado tu codigo')
     clave = BoundedNumericProperty(0, min=-26, max=26)
 
     def show_slider(self, widget): #metodo
@@ -56,6 +55,7 @@ class app_cifraApp(App):
 
 
 def main():
+    
     app = app_cifraApp()
     app.run()
 
